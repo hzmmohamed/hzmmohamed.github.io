@@ -4,14 +4,16 @@ module.exports = {
     title: "hzmmohamed",
   },
   plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-mdx",
     "gatsby-transformer-remark",
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: "blog",
+        path: "./blog/"
       },
-      __key: "pages",
     },
   ],
 };
