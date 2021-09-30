@@ -3,6 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import * as React from 'react'
 import Layout from '../components/layout'
 import { aboutLinks, quote } from './about.module.css'
+import { withPrefix } from 'gatsby'
 // Step 2: Define your component
 const AboutPage = () => {
   return (
@@ -135,7 +136,7 @@ const AboutPage = () => {
         >
           You can find my CV{' '}
         </span>
-        <a className={aboutLinks} href="hazem-fahmi-cv.pdf">
+        <a className={aboutLinks} href={withPrefix('hazem-fahmi-cv.pdf')}>
           here
         </a>
         .
