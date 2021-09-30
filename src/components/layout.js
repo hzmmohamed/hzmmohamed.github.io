@@ -1,43 +1,84 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import {
-  container,
-  heading,
-  navLinks,
-  navLinkItem,
-  navLinkText,
-  siteTitle
-} from './layout.module.css'
+import { StaticImage } from 'gatsby-plugin-image'
+import { container, navLinks, navLinkItem } from './layout.module.css'
 
 const Layout = ({ pageTitle, children }) => {
-  
   return (
     <div className={container}>
       <title>{pageTitle}</title>
-      <header className={siteTitle}>{pageTitle}</header>
-      <nav>
-        <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
-              Home
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
-              About
-            </Link>
-          </li>
-           <li className={navLinkItem}>
-            <Link to="/blog" className={navLinkText}>
-              Blog
-            </Link>
-          </li>
-        </ul>
+      <nav style={{ marginBottom: '1rem', marginTop: '2.5rem' }}>
+        <StaticImage
+          src="../images/orman.png"
+          alt="orman garden"
+          placeholder="blurred"
+          aspectRatio={13 / 4}
+          quality="95"
+          style={{ boxShadow: '0px 3px 8px rgba(0,0,0,0.2)' }}
+          imgStyle={{ borderRadius: '5px' }}
+        ></StaticImage>
+        <div>
+          <ul className={navLinks}>
+            <li className={navLinkItem}>
+              <Link
+                to="/posts"
+                style={{
+                  textDecoration: 'none',
+                  color: '#3666AE',
+                  padding: '2px',
+                }}
+                activeStyle={{
+                  border: 'solid 2px #3666AE',
+                  borderRadius: '2px',
+                }}
+              >
+                posts
+              </Link>
+            </li>
+            <li className={navLinkItem}>
+              <Link
+                to="/art"
+                style={{
+                  textDecoration: 'none',
+                  color: '#E5B763',
+                  padding: '2px',
+                }}
+                activeStyle={{
+                  border: 'solid 2px #E5B763',
+                  borderRadius: '2px',
+                }}
+              >
+                art
+              </Link>
+            </li>
+            <li className={navLinkItem}>
+              <Link
+                to="/about"
+                style={{
+                  textDecoration: 'none',
+                  color: '#5C9071',
+                  padding: '2px',
+                }}
+                activeStyle={{
+                  border: 'solid 2px #5C9071',
+                  borderRadius: '2px',
+                }}
+              >
+                about
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div
+          style={{
+            width: '95%',
+            display: 'flex',
+            justifyContent: 'center',
+            margin: 'auto',
+          }}
+        ></div>
       </nav>
-      <main>
-        <h1 className={heading}>{pageTitle}</h1>
-        {children}
-      </main>
+      <main>{children}</main>
     </div>
   )
 }
