@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-posts-index-js",
+    "path": "/posts/",
+    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"June 6, 2021","title":"It's not a science problem"},"id":"bd0e9c89-0eb7-5a30-964e-b41f9abfc91c","slug":"not-a-science-problem/"}]}},"pageContext":{}},
+    "staticQueryHashes": []}

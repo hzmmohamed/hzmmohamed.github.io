@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-blog-index-js",
-    "path": "/blog/",
-    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"July 24, 2021","title":"Another Post"},"id":"e75a256a-7f95-51b9-8ba6-43642e9d4089","slug":"first-post/"},{"frontmatter":{"date":"July 23, 2021","title":"My First Post"},"id":"f6adb3a4-35de-5b3d-8371-768a13a9d30f","slug":"second-post/"}]}},"pageContext":{}},
-    "staticQueryHashes": []}
