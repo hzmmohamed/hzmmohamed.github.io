@@ -1,1 +1,1 @@
-Practice project following the Gatsby Starter Tutorial
+Code for Github Pages personal website using Gatsby.
