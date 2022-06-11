@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-posts-index-js",
     "path": "/posts/",
-    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":null,"title":""},"id":"2ee1f80c-8547-5068-a78b-68dd6889b429","slug":"path-touching-hearts/"},{"frontmatter":{"date":"June 6, 2021","title":"It's not a science problem"},"id":"96593fc3-2365-57a1-b2e8-2c4a7a671926","slug":"not-a-science-problem/"}]}},"pageContext":{}},
+    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"June 11, 2022","title":"A Path of Touching Hearts"},"id":"2ee1f80c-8547-5068-a78b-68dd6889b429","slug":"path-touching-hearts/"},{"frontmatter":{"date":"June 6, 2021","title":"It's not a science problem"},"id":"96593fc3-2365-57a1-b2e8-2c4a7a671926","slug":"not-a-science-problem/"}]}},"pageContext":{}},
     "staticQueryHashes": []}
